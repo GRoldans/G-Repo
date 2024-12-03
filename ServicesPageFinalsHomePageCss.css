@@ -1,0 +1,183 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(images/GJKSBG.png); /* INSERT */
+    background-size: 1425px 800px; /* ADJUST */
+    background-position: center top;
+    background-repeat: no-repeat;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main {
+    margin-top: 150px; /* To avoid overlapping with headers */
+    padding: 20px;
+}
+
+
+h2, p {
+    text-align: center;
+}
+
+/* Logo */
+.img-Logo {
+    
+    position: sticky;
+    top: 0; /* Ensure it stays at the top of the screen */
+    width: 8em;
+    height: 8em;
+    transform: translateX(40px)translateY(10px);
+}
+
+/* Second Header */
+#header2 {
+background-color: rgb(157, 160, 158);
+position: fixed;
+top: 0px;
+width: 100%;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+padding: 20px;
+box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation Buttons */
+#header2 nav {
+display: flex;
+background: transparent;
+}
+
+#header2 nav a {
+text-decoration: none;
+color: black;
+font-weight: bold;
+padding: 10px 15px;
+border-radius: 5px;
+}
+
+#header2 nav a:hover {
+color: #150869
+}
+
+#cta-button {
+    background: linear-gradient(125deg, #00d4ff, #007bff);
+    background-color: #007bff;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(67, 61, 61);
+    border: none;
+    padding: 8px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    margin-right: 25px;
+}
+
+#cta-button:hover {
+    color: black;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+@media screen and (max-width: 768px) {
+    /* Mobile and Tablet Devices */
+    #header2 {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    #header2 nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #header2 nav a {
+        padding: 8px 12px;
+    }
+
+    /* CTA Button */
+    #cta-button {
+        width: 100%;
+        margin-right: 0;
+        padding: 12px;
+        
+    }
+    #cta-button:focus {
+        outline: none; /* Remove default focus outline */
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7); /* Add a glowing border */
+    }
+
+    /* Adjust logo position */
+    .img-Logo {
+        transform: translateX(0px) translateY(10px);
+        width: 6em;
+        height: 6em;
+    }
+
+    /* Adjust content layout */
+    main {
+        margin-top: 120px; /* Adjust for smaller screens */
+        padding: 15px;
+    }
+    /* Footer */
+    footer {
+        position: relative;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Very Small Screens (phones in portrait mode) */
+    #header2 {
+        padding: 10px;
+    }
+
+    #header2 nav a {
+        padding: 6px 10px;
+    }
+
+    #cta-button {
+        font-size: 16px;
+        padding: 10px 1px;
+    }
+
+    .img-Logo {
+        width: 5em;
+        height: 5em;
+    }
+
+    main {
+        margin-top: 100px;
+        padding: 10px;
+    }
+
+    footer {
+        padding: 8px;
+    }
+}
+/* Make sure footer stays at the bottom */
+html, body 
+{
+    height: 100%;
+}
+
+.responsiveness: onClick {
+    
+}

@@ -1,0 +1,428 @@
+/* General Styles */
+.hero {
+    background-image: url('images/GJKSBG.png'); /* Replace with your hero image */
+    background-size: cover;
+    background-position: center;
+    color: #291010;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-text {
+    margin: 20px 0;
+    font-size: 1.5rem;
+    color: #000000;
+    text-align: center;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    background-color: #ffd700;
+    color: #004d61;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.hero .btn:hover {
+    background-color: #530786;
+    color: #ffffff;
+}
+
+.body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(images/HomePageBG.jpg); 
+    background-size: 1425px 800px; /* ADJUST */ 
+    background-position: center center;
+    color: #fff; /* White text */
+}
+   
+.container {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+   /*portfolio*/
+   /* Header */
+header {
+    background-color: transparent;
+    padding: 20px 0;
+    text-align: center;
+}
+   
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #000000; /* White text */
+}
+   
+header p {/*Get ahead text*/
+    font-size: 1.2em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #000000; /* White text */
+}
+   
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+    position: fixed; /* Make the navigation fixed */
+    top: 0; /* Position it at the top of the viewport */
+    left: 0; /* Position it at the left edge of the viewport */
+    width: 100%; /* Make it full width */
+    z-index: 100; /* Ensure it stays on top of other content */
+    transition: top 0.3s ease; /* Smooth transition for the top property */
+}
+   
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+   
+nav ul li {
+    margin: 0 10px; /* Adjust spacing between icons */
+}
+   
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* White text */
+    font-size: 16px;
+    transition: color 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+   
+nav ul li a:hover {
+    color: #000000;
+}
+   
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; /* Add margin to the right of the logo */
+}
+   
+.logo img {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+}
+   
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    align-items: center; /* Align icons vertically */
+}
+   
+.social-icons li {
+    margin: 0 10px;
+}
+   
+.social-icons a {
+    font-size: 18px;
+    color: #fff; /* White text */
+    transition: color 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+   
+.social-icons a:hover {
+    color: #000000;
+}
+
+/* Enlarge the button when hovered */
+.social-icons a:hover {
+    transform: scale(2.0); /* Slightly increase size */
+}
+
+/* Back Button */
+.back-button {
+    background-color: transparent; /* Make background transparent */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+    border: none; /* Remove default border */
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px; /* Add some spacing between buttons */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    text-align: center; /* Center the text */
+}
+   
+.back-button:hover {
+    background-color: #000000; /* Change background color on hover */
+    color: white
+}
+   
+/* Action Buttons */
+.action-button {
+    background-color: transparent; /* Make background transparent */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+    border: none; /* Remove default border */
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px; /* Add some spacing between buttons */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    text-align: center; /* Center the text */
+}
+   
+.action-button:hover {/*homepage*/
+    background-color: #000000; /* Change background color on hover */
+}
+   
+/* Contact Icon (Now a Button) */
+.Contact {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.Contact-icon {
+    display: block; /* Makes the icon a block element */
+    margin: 20px auto; /* Center the button horizontally */
+    text-align: center; /* Centers the icon horizontally */
+    background-color: transparent; /* Make the button background transparent */
+    color: #fff; /* White text */
+    padding: 10px 20px; /* Add some padding */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Add a smooth transition for hover effect */
+}
+   
+.Contact-icon:hover {
+    background-color: #000000; /* Change background color on hover */
+}
+   
+.Contact-icon img {
+    width: 30px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+    background-color: transparent; /* Make the image background transparent */
+}
+   
+/* Text Styles */
+h1, h2, p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow */
+    color: #000000; /* Set text color to white */
+}
+   
+#contact h2 {
+    margin-bottom: 5px; /* Reduce spacing between heading and icon */
+}
+   
+#contact a {
+    display: block; /* Make the link take up the full width */
+    margin: 0 auto; /* Center the link horizontally */
+}
+   
+   /* Main Content */
+.content {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    margin-top: 20px;
+    position: relative; /* To position the arrow */
+}
+   
+.service-card {
+    width: 300px; /* Adjust width as needed */
+    min-width: 300px;
+    margin: 0 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(255, 255, 255);
+    background-image: url('images/HomePageBG.jpg'); /* Replace with your image URL */
+    opacity: 0.6;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative; /* To position the arrow */
+    transition: transform 0.5s ease; /* Add transition for animation */
+}
+   
+.service-card h2 {
+    color: #000000;
+    margin-bottom: 10px;
+}
+   
+.service-card p {
+    color: #000000;
+    line-height: 1.6;
+}
+   
+.service-card ul {
+    list-style: disc;
+    margin-top: 10px;
+    padding-left: 20px;
+    color: #000000;
+}
+   
+.service-card a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+   
+.service-card a:hover {
+    color: #000000;
+}
+
+/* Style for the title */
+nav h1 {
+    margin: 0 10px; /* Add some margin for spacing */
+    font-size: 1.5em; /* Adjust font size as needed */
+    color: #fff; /* White text */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Add a subtle text shadow */
+}
+
+/* Styles for the hero image */
+.IMAGE img {
+    width: 100%; /* Make the image full width */
+    height: 300px; /* Adjust the height as needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 10px; /* Add some spacing above the image */
+    display: block; /* Ensure the image takes up the full width */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+}
+
+#portfolio {
+    padding: 3rem;
+    text-align: center;
+}
+           
+.portfolio-item {
+    display: inline-block;
+    width: 30%;
+    margin: 1rem;
+    background: #afacac;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+   
+.portfolio-item:hover {
+    transform: scale(1.5);
+}
+           
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+   
+/* Contact Section */
+.Contact {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff; /* White text */
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+   
+.Contact h2 {
+    margin-bottom: 5px; /* Reduce spacing between heading and icon */
+}
+   
+.Contact p {
+    margin-bottom: 20px;
+}
+.Contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.Contact form input, .contact form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.Contact form button {
+    padding: 10px;
+    background-color: #004d61;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Contact form button:hover {
+    background-color: #ffd700;
+    color: #004d61;
+}
+
+footer {
+    background-color: #004d61;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+   
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-card {
+        width: 100%; /* 1 card per row on smaller screens */
+    }
+   
+    .content {
+        flex-direction: column;
+    }
+   
+    .logo img {
+        width: 50%;
+    }
+   
+    /* Navigation Bar for Smaller Devices */
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        display: none; /* Hide the navigation list by default */
+        position: absolute; /* Position the list absolutely */
+        top: 100%; /* Position below the logo */
+        left: 0; /* Align to the left */
+        width: 100%; /* Full width */
+        background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+        padding: 15px;
+        border-radius: 5px;
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+        justify-content: space-between; /* Distribute items evenly */
+    }
+   
+    nav ul li {
+        margin-bottom: 10px;
+        flex: 1; /* Each item takes equal width */
+        margin: 0 5px; /* Add some margin for spacing */
+    }
+    }
+   
+    nav ul li a {
+        font-size: 16px;
+        color: #fff; /* White text */
+        text-decoration: none;
+        display: block; /* Make links occupy full width */
+        padding: 10px; /* Add some padding to links */
+        text-align: center;
+    }
